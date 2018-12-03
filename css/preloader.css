@@ -1,0 +1,12 @@
+#hellopreloader>p{display:none;}
+#hellopreloader_preload{
+    display: block;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 100px;
+    background: #22313F url(http://hello-site.ru//main/images/preloads/bars.svg) center center no-repeat;
+    background-size:41px;}

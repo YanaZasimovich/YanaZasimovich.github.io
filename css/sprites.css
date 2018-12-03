@@ -1,0 +1,35 @@
+footer {
+    width: 100%;
+    height: auto;
+    background: #4C3041;
+	background: linear-gradient(to bottom right, #00000f, #060631);
+}
+.social {
+    text-align: center;
+}
+.icon {
+	background: url('../image/sprites.png') no-repeat;
+    display: inline-block;
+    width: 133px;
+    height: 33px;
+    
+}
+
+.icon.artstation{
+	background-position: 0 -1px ;
+	width: 32px;
+	height: 32px;
+}
+
+.icon.deviantart{
+	background-position: -51px -1px ;
+	width: 32px;
+	height: 32px;
+}
+
+.icon.virink{
+	background-position: -101px 0;
+	width: 32px;
+	height: 32px;
+}
+

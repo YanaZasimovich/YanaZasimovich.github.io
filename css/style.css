@@ -1,0 +1,356 @@
+body a:hover {
+    text-decoration: none;
+}
+html, body {
+   box-sizing: border-box; 
+}
+
+
+/*Specialize*/
+
+.specialize {
+    background: #00000f;
+}
+.specialize-container {
+    padding-top: 2em;
+    padding-bottom: 1em;
+    width: 80%;
+    margin: 0 auto; 
+    text-align: center; 
+  
+}
+.specialize-container h3 {
+    font-size: 35px;
+    color: #24b4ef;
+}
+.specialize-container p {
+    font-size: 24px;
+    color: #efdc66;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.bottom-card {
+    padding-top: 1em;
+    position: relative;
+    top: -15px;
+    transition: all 0.5s;
+}
+.specialize-cards {
+    
+    text-align: center;
+}
+.top-card span {
+    padding: 1em;
+    color: aliceblue;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 15, 0.5);
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.5s;
+}
+body .card {
+    padding-top: 1em;
+    margin: 1em 3em 3em 3em ;
+    background: #00000f;
+    width: 250px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.card img {
+    max-width: 100%;
+}
+
+.card:hover span {
+   opacity: 1;
+   transform: scale(1);
+   
+}
+.card:hover .bottom-card {
+    opacity: 0;
+}
+/*Portfolio*/
+.portfolio-container {
+    max-width: 100%;
+    background: #4C3041;
+	background: linear-gradient(to bottom right, #000000, #060631);
+    padding-bottom: 0.1em;
+}
+.portfolio {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;  
+}
+.portfolio h4 {
+    padding: 0 8px;
+    font-size: 35px;
+    display: inline-block;
+    color: #d2310c;
+    margin-top: 2em;   
+}
+.portfolio p {
+    font-size: 16px;
+    color: #24b4ef;
+}
+.toggles button {
+    border: none;
+    color: #24b4ef;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 1em 0.3em;
+    background: none;
+}
+.toggles button:not(:last-child):after {
+    content: ' / ';
+}
+.posts div {
+ min-width: 20% ;
+ display: inline-block;
+}
+.posts img {
+    
+    max-width: 100%;
+    margin: 0.2em;      
+}
+
+.link_portfolio p {
+    margin: 0;
+    
+}
+.link_portfolio {
+  width: 140px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #24b4ef;
+  box-shadow: 0 0 1px  #8f53d4;
+  margin: 2em auto;
+  padding-top: 0.4em;
+    
+}
+.link_portfolio:hover {
+     background-color: #efdc66;
+}
+
+.text {
+  text-align: center;
+  font-weight: bold;
+  color: #8f53d4;
+  font-size: 1em;
+  font-family: sans-serif;
+      
+}
+
+.text:hover {
+  animation: rubberBand 2.5s infinite;
+ 
+  
+}
+@keyframes rubberBand {
+  0% {transform: scale(1);}
+  30% {transform: scaleX(1.15) scaleY(0.75);}
+  40% {transform: scaleX(0.75) scaleY(1.25);}
+  60% {transform: scaleX(1.15) scaleY(0.85);}
+  100% {transform: scale(1);}
+}
+
+
+/*Contact form*/
+
+.contact_form {
+    
+}
+.contact_form h3 {
+    text-align: center;
+    font-size: 35px; 
+    color: #24b4ef;
+    margin: 1em auto;
+}
+.contact_form h3:after {
+    content: "";
+    display: block;
+    margin: 1em auto;
+    width: 8em;
+    border-bottom: 3px solid #efdc66;
+}
+form {
+  width: 80%;
+  margin: 4em auto;
+}
+.feedback-input {
+  color: #efdc66;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  background-color: #00000f;
+  padding: 13px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 0 solid transparent;
+  border-bottom: 2px solid #efdc66;
+}
+textarea {
+  width: 100%;
+  height: 150px;
+  resize: vertical;
+  color: #00000f;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  background-color: #00000f;
+  padding: 13px;
+  margin-bottom: 10px;
+  width: 100%;
+  
+  border: 0 solid transparent;
+  border-bottom: 2px solid #efdc66;
+}
+.button-submit {
+  width: 100%;
+  border: 2px solid #efdc66;
+  cursor: pointer;
+  background-color: #00000f;
+  color: #24b4ef;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 22px 0;
+  transition: all 0.3s;
+  margin-top: -4px;
+  transition: 1s;
+}
+.button-submit:hover {
+  background-color: #efdc66;
+  color: #8f53d4;
+  border: 2px solid #8f53d4;
+}
+
+
+
+
+@media screen and (max-width: 1329px) {
+    .specialize-container {
+    margin: 0.5em auto;  
+    }
+    .specialize-container h3 {
+    font-size: 1.5em;
+    }
+    .specialize-container p {
+    font-size: 1.1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    }
+    .bottom-card {
+    margin: 0 auto;
+    }
+    .portfolio h4 {
+    padding: 0 0.2em;
+    font-size: 1.5em;
+    margin-bottom: 0.2em;   
+    margin-top: 0.5px;    
+    }
+    .portfolio p {
+    font-size: 1em;
+    }
+    .toggles button {
+    font-size: 0.9em;
+    margin: 0.5em 0.2em;
+    }
+    
+    .link_portfolio {
+    width: 120px;
+    height: 40px;
+    background: transparent;
+    border: 1.5px solid #24b4ef;
+    box-shadow: 0 0 1px  #8f53d4;
+    margin: 0.5em auto; 
+}
+    .text {
+    font-weight: normal;
+    font-size: 0.5em;
+    }
+/*Contact form*/
+
+    .contact_form h3 {
+        text-align: center;
+        font-size: 1.4em; 
+        color: #24b4ef;
+        margin: 0.5em auto;
+    }
+    .contact_form h3:after {
+        content: "";
+        display: block;
+        margin: 0.3em auto;
+        width: 8em;
+        border-bottom: 2px solid #efdc66;
+    }
+    form {
+      width: 80%;
+      margin: 1em auto;
+    }
+    .feedback-input {
+      font-size: .8em;
+      line-height: 1em;
+      padding: 0.6em;
+      margin-bottom: 0.5em;
+      border-bottom: 2px solid #efdc66;
+    }
+    textarea {
+      height: 10em;
+      font-weight: 300;
+      font-size: .8em;
+      line-height: 1em;
+      padding: 0.6em;
+      margin-bottom: 0.5em;
+      border-bottom: 2px solid #efdc66;
+    }
+    .button-submit {
+      width: 100%;
+      border: 2px solid #efdc66;
+      cursor: pointer;
+      background-color: #00000f;
+      color: #24b4ef;
+      font-size: 1em;
+      font-weight: bold;
+      padding: 0.5em 0;
+      transition: all 0.3s;
+      margin-top: -4px;
+      transition: 1s;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    span.carousel-control-prev-icon, span.carousel-control-next-icon {
+    width: 10px;
+}
+    ol.carousel-indicators li {
+    width: 15px;
+}
+    
+   html body .card {
+    padding-top: 1em;
+    margin: .1em .3em .3em .3em ;
+    background: #00000f;
+    display: inline-block;
+    width: 100%; 
+} 
+    .top-card img {
+    width: 90%;
+}
+    .posts img {
+    max-width: 100%;
+    margin: 0.2em;   
+}
+    .top-card span {
+    padding: 2em;
+}
+    
+/*Contact form*/
+
+
+
+}

@@ -1,0 +1,202 @@
+html body {
+    font-family: sans-serif;
+    background: #00000f;   
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+.logo {
+    margin-right: 4em;
+    margin-left: 0.5em;
+}
+.logo1 {
+    display: none;
+}
+.main-menu li {
+    list-style: none;
+   
+}
+body a {
+    text-decoration: none;  
+}
+header {
+    background: #4C3041;
+	background: linear-gradient(to bottom right, #000000, #060631);
+    padding: 1em 0.5em;
+    box-sizing: border-box;
+}
+.header-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.header-container a {
+    color: #d2310c;
+    font-size: 19px;
+    margin-right: 5em;
+    padding: 2em 0.5em;
+    text-decoration: none;
+}
+.header-container a:hover {
+    color: #efdc66;
+    text-decoration: none;
+}
+#menu-checkbox {
+    display: none;
+}
+ul {
+    display: flex;
+}
+nav {
+    margin-top: 1.5em;  
+}
+
+/*Footer*/
+
+footer {
+    width: auto;
+    height: auto;
+    background: #4C3041;
+	background: linear-gradient(to bottom right, #00000f, #060631);   
+}
+.social {
+    text-align: center;
+}
+.icon {
+	background: url('/image/sprites.png') no-repeat;
+    display: inline-block;
+    
+}
+.icon.artstation{
+	background-position: 0 -1px ;
+	width: 32px;
+	height: 32px;
+}
+.icon.deviantart{
+	background-position: -51px -1px ;
+	width: 32px;
+	height: 32px;
+}
+.icon.virink{
+	background-position: -101px 0;
+	width: 32px;
+	height: 32px;
+}
+.social {
+    padding: 1em 0;
+}
+footer img {
+    opacity: 0;
+}
+ 
+    @media only screen and (max-width: 1329px) {
+    body header {
+       padding: 1em; 
+    }
+    .header-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .main-menu {
+        display: none;   
+    }
+    .main-menu li {
+        width: 100%;
+        display: block;
+        font-size: 1em;
+    }
+    .main-menu a {
+        display: block;
+        padding: 0.7em;
+    }
+    .toggle-button {
+        text-align: center;
+        display: block;
+        cursor: pointer;
+        color: #d2310c;
+    }
+    .toggle-button:after {
+        content: attr(data-open);
+        display: block;
+        font-size: 19px;
+    }
+    #menu-checkbox:checked + nav[class="navigation"] .main-menu {
+        display: block;
+    }
+    #menu-checkbox:checked + nav[class="navigation"] .toggle-button:after {
+        content: attr(data-close);
+    }
+    .header-container a {
+        margin-right: -3em;
+     }
+    .main-menu {
+        position: relative;
+        top: 0.5em;
+        right: 3em; /*двигается меню*/
+    }
+    
+    .logo {
+    display: none;
+    }
+    body .header-container {
+        position: relative;
+    }
+    body .logo1 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 1em; }
+}
+
+ @media only screen and (max-width: 450px) {
+    body header {
+       padding: 1em; 
+    }
+    .header-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .main-menu {
+        display: none;   
+    }
+    .main-menu li {
+        width: 100%;
+        display: block;
+        font-size: 1em;
+    }
+    .main-menu a {
+        display: block;
+        padding: 0.7em;
+    }
+    .toggle-button {
+        text-align: center;
+        display: block;
+        cursor: pointer;
+        color: #d2310c;
+    }
+    .toggle-button:after {
+        content: attr(data-open);
+        display: block;
+        font-size: 1em;
+    }
+    #menu-checkbox:checked + nav[role="navigation"] .main-menu {
+        display: block;
+    }
+    #menu-checkbox:checked + nav[role="navigation"] .toggle-button:after {
+        content: attr(data-close);
+    }
+    .header-container a {
+        margin-right: -3em;
+        font-size: 1em;
+     }
+    .main-menu {
+        position: relative;
+        top: 0.5em;
+        right: 3em; /*двигается меню*/
+    }
+    
+}
